@@ -1,0 +1,26 @@
+:root {
+  --header-color: #99D1FF;
+}
+
+body{
+	display:flex;
+	background-color: var(--header-color);
+}
+
+@media all and (max-width: 575px){
+	div{
+		width: 50%;
+	}
+}
+
+.cleared {
+  clear: fix;
+}
+
+.foo {
+  clear: fix;
+}
+
+.bar {
+  clear: fix-legacy;
+}
