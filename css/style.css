@@ -7,20 +7,6 @@ body{
 	background-color: var(--header-color);
 }
 
-@media all and (max-width: 575px){
-	div{
-		width: 50%;
-	}
-}
-
-.cleared {
-  clear: fix;
-}
-
-.foo {
-  clear: fix;
-}
-
-.bar {
-  clear: fix-legacy;
+.logo{
+	width:75px;
 }

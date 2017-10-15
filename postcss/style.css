@@ -1,1 +1,1 @@
-body{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#99d1ff}@media (max-width:575px){div{width:50%}}.cleared:after,.foo:after{content:"";display:block;clear:both}.bar{clear:fix-legacy}
+body{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#99d1ff}.logo{width:75px}
