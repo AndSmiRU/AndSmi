@@ -1,12 +1,23 @@
 :root {
-  --header-color: #99D1FF;
+  --header-color: #555;
 }
 
 body{
-	display:flex;
 	background-color: var(--header-color);
 }
 
 .logo{
 	width:75px;
+}
+
+.h0{
+	height:0;
+}
+
+.main_photo{
+	background-image: url(../img/mountains.jpg);
+	display: block;
+	height: 500px;
+	background-size: cover;
+	background-position: center;
 }
