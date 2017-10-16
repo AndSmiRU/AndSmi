@@ -14,6 +14,10 @@ body{
 	height:0;
 }
 
+.mb-0{
+	margin-bottom: 0px;
+}
+
 .main_photo{
 	background-image: url(../img/mountains.jpg);
 	display: block;
