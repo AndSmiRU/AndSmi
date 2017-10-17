@@ -1,9 +1,9 @@
 :root {
-  --header-color: #555;
+  --main-color: #fefefe;
 }
 
 body{
-	background-color: var(--header-color);
+	background-color: var(--main-color);
 }
 
 .logo{
@@ -18,10 +18,20 @@ body{
 	margin-bottom: 0px;
 }
 
+.parallax-photo{
+	height:300px;
+	clip-path: polygon(0% 0%, -2% 0%, 100% 7%, 100% 100%, 0% 100%, 0% 7%);
+}
+
+.parallax-photo-inverse{
+	height:300px;
+	clip-path: polygon(0px 7%,100% 0%,100% 100%,100% 100%,100% 93%,0px 100%);
+}
+
 .main_photo{
 	background-image: url(../img/mountains.jpg);
 	display: block;
-	height: 500px;
+	min-height: 600px;
 	background-size: cover;
 	background-position: center;
 }
