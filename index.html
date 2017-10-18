@@ -13,6 +13,48 @@
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- Подключение личных стилей -->
     <link type="text/css" rel="stylesheet" href="postcss/style.css" />
+    <style>
+    .adaptive-block1{
+    	font-size: 3vw;
+    	padding-top: 3em;
+    	font-weight: bold;
+    }
+    	@media all and (max-width: 400px){
+    		.adaptive-block1{
+				padding-top: 7em;
+			}
+		}
+		@media all and (max-width:590px){
+			.adaptive-block1{
+				font-size: 9vw;
+			}
+		}
+		@media all and (min-width:591px) and (max-width:680px){
+			.adaptive-block1{
+				font-size:  8vw;
+			}
+		}
+		@media all and (min-width:681px) and (max-width:890px){
+			.adaptive-block1{
+				font-size: 7vw;
+			}
+		}
+		@media all and (min-width:891px) and (max-width:991px){
+			.adaptive-block1{
+				font-size: 6vw;
+			}
+		}
+		@media all and (min-width: 992px) and (max-width:1160px){
+			.adaptive-block1{
+				font-size: 5vw;
+			}
+		}
+		@media all and (min-width:1161px) and (max-width:1700px){
+			.adaptive-block1{
+				font-size:  4vw;
+			}
+		}
+    </style>
 </head>
 
 <body>
@@ -36,6 +78,12 @@
     <section>
         <!-- Блок 1 - начало -->
         <div class="main_photo">
+        	<div class="container white-text adaptive-block1">
+				Администрирование<br/> 
+				Адаптивная верстка<br/> 
+				SEO-продвижение<br/> 
+				Веб-разработка
+        	</div>
         </div>
         <!-- Блок 1 - конец -->
         <!-- Блок 2 - начало -->
@@ -43,7 +91,7 @@
         <!-- Блок 2 - конец -->
         <!-- Блок 3 - начало -->
         <div class="parallax-container parallax-photo">
-        	<div class="parallax"><img src="img/mountains.jpg"/></div>
+        	<div class="parallax"><img src="img/par_photo.png"/></div>
         </div>
         <!-- Блок 3 - конец -->
         <!-- Блок 4 - начало -->
