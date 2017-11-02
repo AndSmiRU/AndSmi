@@ -1,27 +1,29 @@
 :root {
-  	--main-color: #fefefe;
-	--main-text-color: #424242;
-	--main-size: 16px;
-	--standart-bold: 600;
-	--standart-width: 100%;
-	--logo-size:75px;
+    --main-color: #fefefe;
+    --main-background: url("http://pattern4site.ru/images/pattern/_rebig/7-fon-dlya-sayta.png");
+    --main-text-color: #424242;
+    --main-size: 16px;
+    --standart-bold: 600;
+    --standart-width: 100%;
+    --standart-height: 100%;
+    --logo-size: 75px;
 }
 
 html {
     font-size: var(--main-size);
-    color: var(--main-text-color);
-    background-color: var(--main-color);
+    color: var(--main-text-color); // background-color: var(--main-color);
+    background: var(--main-background);
 }
 
-h5{
+h5 {
     font-weight: var(--standart-bold);
 }
 
-.text-size{
+.text-size {
     font-size: 1.625rem;
 }
 
-.advantage ~ p{
+.advantage~p {
     font-size: 1.25rem;
 }
 
@@ -29,7 +31,7 @@ h5{
     padding-top: 20px;
 }
 
-.padding-bot_20{
+.padding-bot_20 {
     padding-bottom: 20px;
 }
 
@@ -39,40 +41,45 @@ h5{
     font-weight: bold;
 }
 
-button.full-width{
-    width:  var(--standart-width);
+button.full-width {
+    width: var(--standart-width);
 }
 
-strong.advantage{
+strong.advantage {
     font-size: 5rem;
 }
 
-.logo{
-	width:var(--logo-size);
+.logo {
+    width: var(--logo-size);
 }
 
-.h0{
-	height:0;
+.h0 {
+    height: 0;
 }
 
-.mb-0{
-	margin-bottom: 0px;
+.mb-0 {
+    margin-bottom: 0px;
 }
 
-.parallax-photo{
-	height:300px;
-	clip-path: polygon(0% 0%, -2% 0%, 100% 7%, 100% 100%, 0% 93%, 0% 7%);
+.parallax-photo {
+    height: 300px;
+    clip-path: polygon(0% 0%, -2% 0%, 100% 7%, 100% 100%, 0% 93%, 0% 7%);
 }
 
-.parallax-photo-inverse{
-	height:300px;
-	clip-path: polygon(0px 7%,100% 0%,100% 100%,100% 100%,100% 93%,0px 100%);
+.parallax-photo-inverse {
+    height: var(--standart-height);
+    clip-path: polygon(0px 3%, 100% 0%, 100% 100%, 100% 100%, 100% 97%, 0px 100%);
 }
 
-.main_photo{
-	background-image: url(../img/mountains.jpg);
-	display: block;
-	height: 600px;
-	background-size: cover;
-	background-position: center;
+.more-about {
+    margin: 65px 0;
+    font-size: 1.125rem;
+}
+
+.main_photo {
+    background-image: url(../img/main/mountains.jpg);
+    display: block;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
 }
