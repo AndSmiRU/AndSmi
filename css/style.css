@@ -11,7 +11,7 @@
 
 html {
     font-size: var(--main-size);
-    color: var(--main-text-color); // background-color: var(--main-color);
+    color: var(--main-text-color);
     background: var(--main-background);
 }
 
@@ -21,6 +21,17 @@ h5 {
 
 .text-size {
     font-size: 1.625rem;
+}
+
+nav ul#nav-mobile>li>a{
+    color: #546e7a;
+    text-shadow: 1px 1px 1px white;
+    font-weight:bold;
+}
+
+nav ul#nav-mobile>li>a:hover{
+    color: white;
+    background-color: rgba(84, 110, 122, 0.6);  
 }
 
 .advantage~p {
