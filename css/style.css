@@ -2,6 +2,7 @@
     --main-color: #fefefe;
     --main-background: url("http://pattern4site.ru/images/pattern/_rebig/7-fon-dlya-sayta.png");
     --main-text-color: #424242;
+    --dark-bg: #546e7a;
     --main-size: 16px;
     --standart-bold: 600;
     --standart-width: 100%;
@@ -23,6 +24,45 @@ h5 {
     font-size: 1.625rem;
 }
 
+[type="checkbox"]:checked+label:before{
+    border-right: 2px solid var(--dark-bg);
+    border-bottom: 2px solid var(--dark-bg);
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    top:3px;
+    left:12px;
+    width:15px;
+    height:15px;
+}
+
+[type="checkbox"]:checked+label:before{
+    left:0px;
+}
+
+label[for="check"]{
+    font-size: .8rem;
+    color: var(--dark-bg);
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+    margin: 0 0 10px 0;
+}
+
+input[type=text], input[type=email]{
+    border: inset 2px #ececec !important;
+    border-top-color: white !important;
+    border-left-color: white !important;
+    padding: 0px 10px !important;
+    background-color: #e1e1e1 !important;
+}
+
+input::placeholder{
+    color: var(--dark-bg);
+}
+
 nav ul#nav-mobile>li>a{
     color: #546e7a;
     text-shadow: 1px 1px 1px white;
@@ -38,11 +78,11 @@ nav ul#nav-mobile>li>a:hover{
     font-size: 1.25rem;
 }
 
-.padding-top_20 {
+.pt-20 {
     padding-top: 20px;
 }
 
-.padding-bot_20 {
+.pb-20 {
     padding-bottom: 20px;
 }
 
@@ -93,4 +133,31 @@ strong.advantage {
     height: 600px;
     background-size: cover;
     background-position: center;
+}
+
+.posrel{
+    position:relative;
+}
+
+.mb-20{
+    margin-bottom:20px;
+}
+
+.submit-but{
+    border: 0;
+    padding: 10px 45px;
+    float:left;
+}
+
+.form-img{
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    position: absolute;
+}
+
+.mb-60{
+    margin-bottom:60px;
 }
