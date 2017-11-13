@@ -20,6 +20,11 @@ h5 {
     font-weight: var(--standart-bold);
 }
 
+.h2-text h2{
+    font-size: 1.7vw;
+    display: inline-block;
+}
+
 .text-size {
     font-size: 1.625rem;
 }
