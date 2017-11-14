@@ -10,10 +10,25 @@
     --logo-size: 75px;
 }
 
+@font-face { 
+    font-family: "Ubuntu";
+    src: url(../fonts/ubuntu.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: "Ubuntu";
+    src: url(../fonts/ubuntu-bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 html {
     font-size: var(--main-size);
     color: var(--main-text-color);
     background: var(--main-background);
+    font-family: "Ubuntu";
 }
 
 h5 {
@@ -82,10 +97,17 @@ input::placeholder{
     color: var(--dark-bg);
 }
 
+.gradient{
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, rgba(241, 241, 241, 0.63) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+
 nav ul#nav-mobile>li>a{
-    color: #546e7a;
-    text-shadow: 1px 1px 1px white;
-    font-weight:bold;
+    color: #354142;
+    text-shadow: 1px 1px 8px #fff;
+    font-weight:700;
 }
 
 nav ul#nav-mobile>li>a:hover{
@@ -109,6 +131,14 @@ nav ul#nav-mobile>li>a:hover{
     font-size: 3rem;
     padding-top: 3em;
     font-weight: bold;
+}
+
+.php{
+    background: url("../img/technologies/php.png");
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    background-repeat: no-repeat;
 }
 
 button.full-width {
@@ -148,7 +178,7 @@ strong.advantage {
 }
 
 .main_photo {
-    background-image: url(../img/main/mountains.jpg);
+    background-image: url(../img/main/mountains.gif);
     display: block;
     height: 600px;
     background-size: cover;
