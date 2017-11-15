@@ -135,6 +135,17 @@ nav ul#nav-mobile>li>a:hover{
 
 .php{
     background: url("../img/technologies/php.png");
+}
+
+.js{
+    background: url("../img/technologies/js.png");
+}
+
+.st{
+    background:  url("../img/technologies/st.png");
+}
+
+.php, .js, .st{
     background-position: center;
     background-size: contain;
     height: 120px;
